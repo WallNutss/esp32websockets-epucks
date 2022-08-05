@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Avenir, Helvetica, Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    height: 90vh;
+}
+
+h1{
+    color: #101357;
+}
+
+#control button{
+    background-color: #eee;
+    border:none;
+    border-radius:50%;
+    font-size:25px;
+    height:60px;
+    width:60px;
+    outline:none;
+    position:absolute;
+    cursor: pointer;
+}
+
+#control{
+    position:absolute;
+    top: 30%;
+    left: 45%;
+    height:180px;
+    width:180px;
+    border-radius:50%;
+
+}
+
+/* make control uncopy, so mobile can have ease of control */
+
+#control{
+        -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+           -khtml-user-select: none; /* Konqueror HTML */
+             -moz-user-select: none; /* Old versions of Firefox */
+              -ms-user-select: none; /* Internet Explorer/Edge */
+                  user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
+}
+
+#control::before{
+    content:"";
+    position:absolute ;
+    top:40px;
+    left:40px;
+    height:100px;
+    width:100px;
+    background:#bbb;
+    border-radius:22px;
+}
+#left{
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+}
+#right{
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+}
+#up{
+    position:absolute ;
+    top:0;
+    left:50%;
+    transform:translateX(-50%) rotate(90deg);
+}
+#down{
+    
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%) rotate(90deg);
+}
+
+footer{
+    margin-top: 80vh;
+    height: 10vh;
+    background: #101357;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 100px) {
+    body {
+      background-color: lightblue;
+    }
+    #control {
+        left: 28%;
+        
+    }
+  }
+
+@media only screen and (min-width: 400px) {
+    #control {
+        left: 35%; 
+    }
+  }
+
+@media only screen and (min-width: 700px) {
+    #control {
+        left: 43%; 
+    }
+  }
