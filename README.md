@@ -1,6 +1,6 @@
 # ESP32 Remote Control Epucks With Simple Websockets
 <p align="center">
-  <img width="900" height="450" src="doc/esp32 robot.jpg">
+  <img width="900" height="450" src="doc/esp32 robot.jpeg">
 </p>
 
 In my recent year at the end of my college, I started learn more about backend server and it's implementation and my interest in IoT about data sensor exchange. In my journey of building it, I get confused why almost in Youtube learning materials there is no tutorial about internet based communication but so much with on local network to work about. Frustated about that and wanting to learn more about remote control with Internet so anyone with access can control the robot device. In this repo, I finish try implementing websocket protocol on how we exchange data/commands through internet back to ESP32 with latency about 400-600ms, with server hosted on heroku.
