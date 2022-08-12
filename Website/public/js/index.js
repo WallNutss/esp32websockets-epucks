@@ -1,8 +1,6 @@
     // Getting the button
     const control = document.querySelectorAll("button")
     let ws;
-    let db;
-    const sendtime = document.getElementById("send")
 
     function init(){
         if(ws){
@@ -19,10 +17,6 @@
         ws.onclose = function(){
             ws = null;
         }
-        const app = initializeApp(firebaseConfig);
-        console.log("Connected to firebase")
-        db = getDatabase(app)
-        console.log("Connected to database")
     }
     // Listening to each button controller, dekstop or on mobile
     // Where each button have different respond, according to their ID
