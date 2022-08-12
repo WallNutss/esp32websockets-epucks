@@ -38,12 +38,15 @@ This app uses Heroku platform for Deployment.
 [Link here](https://esp32-ws.herokuapp.com/)
 
 # Known Issues
-* Big Latency Around 500 to 700ms
+<div>
+<ul>
+<li>Big Latency Around 500 to 700ms</li>
 <p align="center">
   <img src="doc/Latency (ms) over Internet.png">
 </p>
-* Websocket close connection if 55s idle or don't send data to ESP32. Which mean that we need to restart the device so we can connect back again to the server. This issues comes from heroku policy where after initial response, each byte that we sent will have resets a rolling 55 second window. Where if no data is sent with 55s limit time, then the connection will be terminated. [Look here for more](https://devcenter.heroku.com/articles/http-routing#timeouts) . Currently, I still haven't come up with an easy to implement solution.
-
+<li>Websocket close connection if 55s idle or don't send data to ESP32. Which mean that we need to restart the device so we can connect back again to the server. This issues comes from heroku policy where after initial response, each byte that we sent will have resets a rolling 55 second window. Where if no data is sent with 55s limit time, then the connection will be terminated. [Look here for more](https://devcenter.heroku.com/articles/http-routing#timeouts) . Currently, I still haven't come up with an easy to implement solution.</li>
+</ul>
+</div>
 
 # References
 * [Making IoT with WeMos D1 R2 using Node.js RESTful API and Vue.js](https://rafipriatna.id/membuat-iot-dengan-wemos-d1-r2-esp8266-serta-menggunakan-api-nodejs-dan-vuejs#konfigurasi-server) (In Bahasa Indonesia)
