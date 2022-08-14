@@ -48,6 +48,9 @@ This app uses Heroku platform for Deployment.
 </ul>
 </div>
 
+# Demo
+https://twitter.com/PotatooJun/status/1558239175194775552
+
 # References
 * [Making IoT with WeMos D1 R2 using Node.js RESTful API and Vue.js](https://rafipriatna.id/membuat-iot-dengan-wemos-d1-r2-esp8266-serta-menggunakan-api-nodejs-dan-vuejs#konfigurasi-server) (In Bahasa Indonesia)
 * [TB6612FNG Configuration](https://learn.sparkfun.com/tutorials/tb6612fng-hookup-guide/all)
